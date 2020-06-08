@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.haw-works{
+    padding: 120px 0 100px;
+    background: url(../img/haw-work_bg.png)  no-repeat center/cover;
+}
+.haw-works__items{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.haw-works__item{
+    width: 270px;
+    padding: 0 10px;
+    text-align: center;
+
+    @media @notebook{
+        width: 240px;
+    }
+    @media @tablet{
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    @media @mobile-sm{
+        width: 100%;
+    }
+}
+.haw-works__title{
+    margin: 50px 0 30px;
+
+    font-size: 30px;
+    color: @white;
+
+    @media @mobile{
+        margin: 20px 0;
+    }
+}
+.haw-works__text{
+    font-weight: 100;
+    font-size: 18px;
+    color: @white;
+}
+.haw-works__link{
+    margin-top: 80px;
+    padding: 21px 41px;
+    display: inline-block;
+    
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    
+    background-color: @yellow;
+    border-radius: 3px;
+    border: 2px solid @yellow;
+
+    transition: background-color .2s linear, color .2s linear;
+
+    &:hover{
+        background-color: transparent;
+        color: @yellow;
+    }
+}

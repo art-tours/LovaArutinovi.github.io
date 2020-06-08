@@ -1,0 +1,64 @@
+// main: ../style.less
+
+.footer {
+    padding: 140px 0 240px;
+    background-color: @black;
+}
+
+.footer__imets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media @tablet{
+       
+    }
+}
+
+.footer__item {
+    width: 270px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        color: @white;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media @notebook{
+        width: 240px;
+    }
+    @media @tablet{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+}
+.footer__copy{
+    font-family: @nova;
+
+    width: 670px;
+    margin: 130px auto 0;
+    text-align: center;
+
+    font-size: 18px;
+    color: @white;
+    font-weight: 300;
+
+    @media @mobile{
+        width: 100%;
+    }
+}

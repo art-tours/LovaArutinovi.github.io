@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.header {
+    padding: 40px 0;
+    border-top: 8px solid @yellow;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    &.fixed {
+        padding: 10px 0 20px;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+
+        background: @black;
+        box-shadow: 0 5px 10px fade(@black, 30%);
+    }
+}
+
+.header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__link {
+    color: @white;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @tablet {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        position: absolute;
+        top: 99%;
+        right: 0;
+        z-index: 1000;
+
+        background-color: @black;
+        box-shadow: 0 5px 10px fade(@black, 30%);
+        text-align: center;
+
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+    }
+}
+
+.nav__link {
+    padding: 12px 20px;
+
+    font-size: 18px;
+    color: @white;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    transition: background .2s linear;
+
+    &:hover {
+        background-color: @yellow;
+    }
+    &.active{
+        background-color: @yellow;
+    }
+    @media @tablet {
+        width: 100%;
+    }
+}

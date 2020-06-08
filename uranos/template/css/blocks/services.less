@@ -1,0 +1,81 @@
+// main: ../style.less
+
+.services{
+    padding: 105px 0 140px;
+    background-color: #191b29;
+}
+.services__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.services__img{
+    position: absolute;
+    top: -290px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    img{
+        width: 447px;
+        height: 784px;
+        display: block;
+        height: auto;
+
+        @media @notebook {
+            width: 400px;
+            height: 700px;
+        }
+        @media @tablet{
+            display: none;
+        }
+    }
+}
+.services__item{
+    width: 310px;
+    margin-bottom: 70px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media @mobile {
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+
+        &:last-child{
+            margin-bottom: 70px;
+        }
+    }
+}
+.services__head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media @mobile{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.services__title{
+    font-size: 36px;
+    font-weight: 300;
+    color: @white;
+    margin-left: 38px;
+
+    @media @notebook {
+        font-size: 30px;
+    }
+    @media @mobile{
+        margin: 20px 0 0;
+    }
+}
+.services__text{
+    margin-top: 30px;
+
+    color: @blue;
+    line-height: 30px;
+}

@@ -1,0 +1,130 @@
+// main: ../style.less
+
+.intro{
+    background: url(../img/intro-bg.jpg) no-repeat center/cover;
+}
+.intro__inner{
+    padding: 260px 0 340px;
+    text-align: center;
+
+    @media @tablet{
+        padding: 230px 0 280px;
+    }
+    @media @mobile{
+        padding: 180px 0 200px;
+    }
+    @media @mobile-sm{
+        padding: 130px 0 140px;
+    }
+}
+.intro__title{
+    font-weight: 100;
+    color: @white;
+    font-size: 60px;
+    line-height: 72px;
+
+    @media @mobile{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @media @mobile-sm{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+.intro__subtitle{
+    font-weight: 500;
+    color: @white;
+    font-size: 60px;
+    line-height: 72px;
+
+    @media @mobile{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @media @mobile-sm{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+.intro__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 68px;
+
+    @media @mobile{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+}
+.intro__input{
+    padding: 21px;
+    display: block;
+    max-height: 66px;
+    max-width: 225px;
+
+    font-family: @roboto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: @white;
+
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+
+    @media @mobile{
+        width: 50%;
+    }
+    @media @mobile-sm{
+        min-width: 100%;
+    }
+}
+.intro__input + .intro__input{
+    margin: 0 15px;
+
+    @media @mobile-sm{
+        margin: 30px 0;
+    }
+}
+.intro__input::placeholder{
+    font-family: @roboto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: @white;
+}
+.intro__button{
+    padding: 21px 37px;
+    max-height: 66px;
+
+    font-family: @roboto;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: @black;
+    font-size: 18px;
+
+    background-color: @yellow;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    
+    &:hover{
+        cursor: pointer;
+
+        box-shadow: 0 0 10px 1px @black inset;
+    }
+
+    @media @mobile{
+        width: 50%;
+
+        margin-top: 30px;
+    }
+    @media @mobile-sm{
+        width: 100%;
+
+        margin-top: 0;
+    }
+}

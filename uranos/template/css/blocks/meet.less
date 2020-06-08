@@ -1,0 +1,55 @@
+// main: ../style.less
+
+.meet{
+    padding: 190px 0 90px;
+
+    background: #ffd800;
+
+    @media @notebook{
+        padding: 170px 0 70px;
+    }
+    @media @tablet{
+        padding: 150px 0 70px;
+    }
+    @media @mobile{
+        padding: 130px 0 70px;
+    }
+    @media @mobile-sm{
+        padding: 80px 0 60px;
+    }
+}
+.teammates{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.teammate{
+    width: 270px;
+    padding: 0 10px;
+    text-align: center;
+
+    @media @notebook{
+        width: 240px;
+    }
+    @media @tablet{
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    @media @mobile-sm{
+        width: 100%;
+    }
+}
+
+.teammate__name{
+    margin: 30px 0 20px;
+
+    font-size: 30px;
+    color: @black;
+}
+.teammate__text{
+    font-weight: 100;
+    font-size: 18px;
+    color: @black;
+}

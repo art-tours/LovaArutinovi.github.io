@@ -1,0 +1,71 @@
+// main: ../style.less
+
+
+.burger {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+
+    display: none;
+
+    @media @tablet {
+        display: block;
+    }
+
+    span {
+        background-color: @white;
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            z-index: 111;
+
+            background-color: @white;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+
+            position: absolute;
+            top: 8px;
+            left: 0;
+            z-index: 111;
+
+            background-color: @white;
+        }
+
+    }
+
+}
+
+.active__burger span {
+    background-color: transparent;
+
+    &::before {
+        transform-origin: left top;
+        transform: rotate(45deg) translateY(-3px);
+        transition: transform .2s linear;
+    }
+
+    &::after {
+        transform-origin: left bottom;
+        transform: rotate(-45deg) translateY(3px);
+        transition: transform .2s linear;
+    }
+}

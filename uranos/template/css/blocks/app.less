@@ -1,0 +1,100 @@
+// main: ../style.less
+
+
+.app{
+    position: relative;
+}
+.app__head{
+    padding: 65px 0 70px;
+
+    background-color: #ffe347;
+
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.app__description{
+    padding: 85px 0 180px;
+
+    @media @mobile {
+        padding: 85px 0 310px;
+        text-align: center;
+    }
+    @media @mobile-sm{
+        padding: 50px 0 250px;
+    }
+}
+
+.app__title{
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    color: @black;
+    font-weight: 700;
+}
+.app__text{
+    width: 500px;
+
+    + .app__text{
+        margin-top: 45px;
+    }
+
+    @media @tablet{
+        width: 350px;
+    }
+    @media @mobile{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+
+.app__link{
+    margin-top: 60px;
+    padding: 21px 41px;
+    display: inline-block;
+    
+    color: @white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    
+    background-color: @black;
+    border-radius: 3px;
+    border: 2px solid @black;
+
+    transition: background-color .2s linear, color .2s linear;
+
+    &:hover{
+        background-color: transparent;
+        color: @black;
+    }
+}
+
+.macbook{
+    position: absolute;
+    top: -860px;
+    right:-615px;
+
+    @media @notebook{
+        right: -800px;
+    }
+    @media @mobile{
+        width: 500px;
+        height: 300px;
+        top: -280px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    @media @mobile-sm{
+        width: 300px;
+        height: 200px;
+        top: -230px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
