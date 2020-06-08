@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/css.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<img src="img/Logo-sm.png" alt="AXIT">
+				</div>
+				<div class="header__nav" id="nav">
+					<a class="nav__link" href="#" data-scroll=".tabs">features</a>
+					<a class="nav__link" href="#" data-scroll=".awesome">about</a>
+					<a class="nav__link" href="#" data-scroll=".products">pricing</a>
+					<a class="nav__link" href="#" data-scroll=".reviews">reviews</a>
+					<a class="nav__link" href="#" data-scroll=".contact">contact</a>
+				</div>
+
+				<button class="burger " id="navToggle">
+                    <span class="burger__span" id="burger__span"></span>
+                </button>
+			</div>
+		</div>
+	</header>
+	<div class="intro">
+		<video autoplay muted loop id="myVideo">
+			<source src="video/coverr-tourist-with-hat-1561049929218.mp4" type="video/mp4">
+		</video>
+		<div class="intro__bg">
+			<div class="container">
+				<div class="intro__inner">
+					<div class="intro__content">
+						<img class="intro__logo" src="img/Logo.png" alt="logo">
+						<div class="intro__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+							accumsan et viverra justo commodo.
+						</div>
+						<a class="intro__download" href="#">download</a>
+					</div>
+					<div class="intro__form">
+						<form class="form__inner" action="#" method="post">
+							<h3 class="form__title">Try Your <span>free</span> Trial Today</h3>
+							<input class="form__input" type="text" placeholder="Name"><br>
+							<input class="form__input" type="text" placeholder="Email"><br>
+							<input class="form__input" type="password" placeholder="Password">
+							<button class="form__button"  type="submit">get started</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="social-media">
+		<div class="container">
+			<div class="social-media__inner">
+				<div class="social-media__content">
+					<h4 class="social-media__title">Social Media</h4>
+					<p class="social-media__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, illo unde error.</p>
+				</div>
+				<div class="social-media__icons">
+					<a class="social-media__icon" href="#"><img src="img/face-logo-gray.svg" alt="facebook"></a>
+					<a class="social-media__icon" href="#"><img src="img/twitter-logo-gray.svg" alt="twitter"></a>
+					<a class="social-media__icon" href="#"><img src="img/google-logo-gray.svg" alt="google"></a>
+					<a class="social-media__icon" href="#"><img src="img/pinterest-logo-gray.svg" alt="pinterest"></a>
+					<a class="social-media__icon" href="#"><img src="img/instagram-logo-gray.svg" alt="instagram"></a>
+					<a class="social-media__icon" href="#"><img src="img/stumbleupon-logo-gray.svg" alt="stumbleupon"></a>
+					<a class="social-media__icon" href="#"><img src="img/wifi-logo-gray.svg" alt="wifi"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tabs">
+		<div class="container">
+			<div class="tabs__inner">
+				<div class="tabs_items">
+					<div class="tabs__item tabs__item--active">
+						<p>tab 1</p>
+					</div>
+					<div class="tabs__item">
+						<p>tab 2</p>
+					</div>
+					<div class="tabs__item">
+						<p>tab 3</p>
+					</div>
+				</div>
+				<div class="tabs__content">
+					<h4 class="tabs__title">Tabs with soft transitioning effect.</h4>
+					<div class="tabs__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+						justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+						penatibus et magnis dis parturient montes.</p>
+						
+						<p class="tabs__text--margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+						bibendum laoreet.</p>
+					</div>
+					<a class="tabs__download" href="#">download</a>
+				</div>
+				<div class="tabs__img">
+					<img src="img/town.png" alt="town">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="sublist">
+		<div class="container">
+			<div class="sublist__inner">
+				<div class="sublist__img">
+					<img src="img/townok.png" alt="town">
+				</div>
+
+				<div class="sublist__content">
+					<h4 class="sublist__title">Sub list section</h4>
+					<p class="sublist__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+						euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+						accumsan et viverra justo commodo.</p>
+					<div class="sublist__files">
+						<div class="sublist__download">
+							<p class="download__icon"><i class="fas fa-cloud-upload-alt"></i></p>
+							<div class="sublist__download-item">
+								<h5 class="download__title">title</h5>
+								<p class="download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Aenean euismod bibendum laoreet.</p>
+							</div>
+						</div>
+						<div class="sublist__download">
+							<p class="download__icon"><i class="fas fa-cloud-download-alt"></i></p>
+							<div class="sublist__download-item">
+								<h5 class="download__title">title</h5>
+								<p class="download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Aenean euismod bibendum laoreet.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="standart-picture">
+		<div class="container">
+			<div class="standart-picture__inner">
+
+				<div class="standart-picture__content">
+					<h4 class="standart-picture__title">Sub list section</h4>
+					<p class="standart-picture__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+					euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
+					et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
+					natoque penatibus et magnis dis parturient montes.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+					bibendum laoreet.</p>
+				</div>
+
+				<div class="standart-picture__img">
+					<img src="img/townok_2.png" alt="town">
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="awesome">
+		<div class="container">
+			<div class="awesome__inner">
+				<div class="head">
+					<h1 class="head__title">WHY THIS IS AWESOME</h1>
+					<h5 class="head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+				</div>
+				<div class="awesome__content">
+					<div class="awesome__item">
+						<div class="awesome__icon"><i class="far fa-lightbulb"></i></div>
+						<div class="awesome__title">Thoughtful Design</div>
+						<div class="awesome__text">Lorem ipsum dolor sit 		amet, consectetur adipiscing 
+							elit. Aenean euismod bibendum laoreet. Proin gravida 
+							dolor sit amet lacus accumsan et viverra. 
+						</div>
+					</div>
+					<div class="awesome__item">
+						<div class="awesome__icon"><i class="far fa-keyboard"></i></div>
+						<div class="awesome__title">Well Crafted</div>
+						<div class="awesome__text">Lorem ipsum dolor sit 		amet, consectetur adipiscing 
+							elit. Aenean euismod bibendum laoreet. Proin gravida 
+							dolor sit amet lacus accumsan et viverra.
+						</div>
+					</div>
+					<div class="awesome__item">
+						<div class="awesome__icon"><i class="fas fa-bolt"></i></div>
+						<div class="awesome__title">Easy to Customize</div>
+						<div class="awesome__text">Lorem ipsum dolor sit 		amet, consectetur adipiscing 
+							elit. Aenean euismod bibendum laoreet. Proin gravida 
+							dolor sit amet lacus accumsan et viverra.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="products">
+		<div class="container">
+			<div class="products__inner">
+				<div class="head">
+					<h1 class="head__title">PRICING OPTIONS</h1>
+					<h5 class="head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+				</div>
+
+				<div class="products__content">
+					<div class="products__item">
+						<h3 class="products__title">Basic</h3>
+						<div class="products__price">
+							<span class="products__cost">0</span> 
+							<span class="products__price-text">Free for Life</span>
+						</div>
+						<div class="products__features">1 gb of space</div>
+						<div class="products__features">10 gb of bandwidth</div>
+						<div class="products__features">3 websites</div>
+						<div class="products__features">Basic Customization</div>
+						<div class="products__features">wordpress integration</div>
+						<div class="products__features">email support</div>
+					</div>
+					<div class="products__item products__item--popular">
+						<h3 class="products__title">Professional</h3>
+						<div class="products__price products__price--popular">
+							$<span class="products__cost">19</span> 
+							<span class="products__price-text">Montly Payment</span>
+						</div>
+						<div class="products__our-most-popular">our most popular</div>
+						<div class="products__features">5 gb of space</div>
+						<div class="products__features">50 gb of bandwidth</div>
+						<div class="products__features">12 websites</div>
+						<div class="products__features">Advanced Customization</div>
+						<div class="products__features">wordpress integration</div>
+						<div class="products__features">email support</div>
+					</div>
+					<div class="products__item">
+						<h3 class="products__title">Enterprise</h3>
+						<div class="products__price">
+							$<span class="products__cost">70</span> 
+							<span class="products__price-text">Montly Payment</span></span>
+						</div>
+						<div class="products__features">unlimited space</div>
+						<div class="products__features">unlimited bandwidth</div>
+						<div class="products__features">70 websites</div>
+						<div class="products__features">Basic Customization</div>
+						<div class="products__features">wordpress integration</div>
+						<div class="products__features">24/7 customer support</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<div class="reviews__inner">
+				
+				<div class="head">
+					<h1 class="head__title">WHAT OUR CUSTOMERS ARE SAYING</h1>
+					<h5 class="head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+				</div>
+
+				<div class="reviews__content">
+					<div class="reviews__item">
+						<div class="reviews__text">Lorem ipsum dolor sit 		amet, 
+							consectetur adipisicing elit. Doloribus 
+							accusamus expedita repellat similique 
+							odio aspernatur ex, architecto eaque 
+							quo suscipit.
+						</div>
+						<div class="review__author">
+							<div class="author__img">
+								<img src="img/avatar.png" alt="autor">
+							</div>
+							<div class="author__text">
+								<h3 class="author__title">Jeremy H.</h3>
+								<div class="author__prof">Manager</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__text">Lorem ipsum dolor sit 		amet, 
+							consectetur adipisicing elit. Doloribus 
+							accusamus expedita repellat similique 
+							odio aspernatur ex, architecto eaque 
+							quo suscipit.
+						</div>
+						<div class="review__author">
+							<div class="author__img">
+								<img src="img/avatar.png" alt="autor">
+							</div>
+							<div class="author__text">
+								<h3 class="author__title">John S.</h3>
+								<div class="author__prof">Freelancer</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__text">Lorem ipsum dolor sit 		amet, 
+							consectetur adipisicing elit. Doloribus 
+							accusamus expedita repellat similique 
+							odio aspernatur ex, architecto eaque 
+							quo suscipit.
+						</div>
+						<div class="review__author">
+							<div class="author__img">
+								<img src="img/avatar.png" alt="autor">
+							</div>
+							<div class="author__text">
+								<h3 class="author__title">Susan W.</h3>
+								<div class="author__prof">Photographer</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="axure">
+		<video autoplay muted loop id="myVideo">
+			<source src="video/coverr-tourist-with-hat-1561049929218.mp4" type="video/mp4">
+		</video>
+		<div class="axure__bg">
+			<div class="container">
+			<div class="axure__inner">
+				<div class="head head--white">
+					<h1 class="head__title">STYLISH AXURE DESIGN</h1>
+					<h5 class="head__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</h5>
+				</div>
+				<a class="axure__download" href="#">download</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<div class="contact__inner">
+
+				<div class="head">
+					<h1 class="head__title">CONTACT US</h1>
+					<h5 class="head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+				</div>
+
+				<form class="contact__form" action="/" method="post">
+					<div class="contact__form__col">
+						<input class="contact__input" type="text" name="name" placeholder="Name">
+						<input class="contact__input" type="email" name="email" placeholder="Email">
+						<input class="contact__input" type="text" name="subject" placeholder="Subject">
+					</div>
+					<div class="contact__form__col">
+						<textarea class="contact__textarea" name="textarea" placeholder="Message"></textarea>
+					</div>
+					<div class="contact__submit">
+						<input class="contact__submit--submit" type="submit" value="send Message">
+					</div>
+					
+				</form>	
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__soc">
+					<a class="footer__link" href="#">
+						<img src="img/face-logo-gray.svg" alt="face">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/twitter-logo-gray.svg" alt="twitter">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/google-logo-gray.svg" alt="google">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/pinterest-logo-gray.svg" alt="pinterest">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/instagram-logo-gray.svg" alt="instagram">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/stumbleupon-logo-gray.svg" alt="stumbleupon">
+					</a>
+					<a class="footer__link" href="#">
+						<img src="img/wifi-logo-gray.svg" alt="wifi">
+					</a>
+				</div>
+				<p class="footer__copy">&copy; 2015 Axure Themes</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

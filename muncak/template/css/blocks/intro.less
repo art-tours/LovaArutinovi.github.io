@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.intro{
+    background: url(../img/intro_bg.jpg) no-repeat center;
+    z-index: 1;
+    margin-top: -2px;
+
+    @media @tablet{
+        background: #fff;
+    }
+}
+.intro__inner{
+    padding: 270px 0 335px 115px;
+
+    @media @notebook-lg{
+        padding: 270px 0 335px 100px;
+    }
+    @media @notebook{
+        padding: 175px 0 335px 80px;
+    }
+    @media @mobile{
+        padding: 120px 0 0;
+        text-align: center;
+    }
+}
+.intro__content{
+    width: 100%;
+    max-width: 405px;
+
+    @media @mobile{
+        max-width: 100%;
+    }
+
+}
+.intro__title{
+    font-weight: 700;
+    font-size: 50px;
+    color: #1c2056;
+
+    @media @notebook{
+       
+        font-size: 40px;
+    }
+}
+.intro__text{
+    margin: 42px 0 150px;
+    font-size: 18px;
+    color: #2d2058;
+
+    @media @notebook{
+        width: 100%;
+        max-width: 300px;
+    }
+    @media @mobile{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+.intro__button{
+
+    padding: 27px 65px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+
+    background: #2870db;
+    border-radius: 40px;
+
+    transition: box-shadow .2s linear;
+    &:hover{
+        box-shadow: 0 22px 24px fade(#1153a5 , 20%);
+    }
+
+    @media @mobile{
+        padding: 20px 50px;
+    }
+}

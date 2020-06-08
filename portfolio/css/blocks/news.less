@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.news{
+    padding-top: 13.8rem;
+
+    @media @tablet {
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+    }
+}
+.news__header{
+    text-align: center;
+}
+.news__title{
+    margin-bottom: 0.4rem;
+
+    font-size: 3rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media @notebook{
+        font-size: 2.5rem;
+    }
+    @media @mobile{
+        font-size: 2rem;
+    }
+}
+.news__text{
+    margin-bottom: 3.66rem;
+
+    font-size: 1.2rem;
+    color: @gray-light;
+    font-weight: 300;
+}
+
+
+.news__footer{
+    text-align: right;
+    margin-bottom: 8rem;
+}
+.news__link{
+    font-size: 0.94em;
+    color: @gray;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

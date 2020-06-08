@@ -1,0 +1,81 @@
+// main: ../style.less
+
+
+.footer{
+    @media @notebook-lg{
+        background: #1955a3;
+    }
+}
+
+.footer__inner{
+    padding: 100px 0 25px;
+}
+.footer__cols{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__col{
+    margin: 0 15px 25px;
+
+    @media @mobile-sm{
+        width: 100%;
+    }
+}
+.footer__title{
+    margin-bottom: 55px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @media @mobile-sm{
+        margin-bottom: 25px;
+    }
+}
+.footer__text{
+    margin-bottom: 45px;
+
+    font-size: 16px;
+    color: #fff;
+
+    p {
+        margin-bottom: 4px;
+    }
+}
+.footer__link{
+    margin-bottom: 22px;
+
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.footer__social{
+    display: flex;
+}
+.footer__social-link{
+    margin-left: 9px;
+    padding: 14px;
+
+    display: block;
+    max-width: 47px;
+    max-height: 47px;
+
+    background: #fff;
+    border-radius: 50%;
+
+    transition: margin .2s linear;
+    img{
+        height: 20px;
+        width: 20px;
+    }
+    &:hover{
+        margin-top: -5px;
+    }
+}

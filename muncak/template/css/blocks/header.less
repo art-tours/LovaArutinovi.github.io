@@ -1,0 +1,129 @@
+// main: ../style.less
+
+.header {
+    padding-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    @media @notebook {
+        padding-top: 30px;
+    }
+
+    @media @tablet {
+        background: #2e97c0;
+        padding: 5px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #2e97c0;
+    padding: 5px 0;
+
+    box-shadow: 0 1px 5px fade(#2e97c0, 50%);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 40px;
+    color: #1c2056;
+
+    span {
+        color: #2870db;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media @tablet {
+        width: 100%;
+        height: 0;
+
+        position: absolute;
+        top: -200px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        background: #2e97c0;
+        box-shadow: 0 5px 10px fade(#2e97c0, 50%);
+
+        transition: height .3s linear;
+        &.show {
+            top:0;
+            padding: 0 20px;
+            transform-origin: top;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 100vh;
+        }
+    }
+}
+
+.nav__link {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    margin: 0 30px;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background: #ffffff;
+        transition: width .2s linear;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    &--log {
+        padding: 11px 35px;
+
+        color: #14215e;
+
+        background: #fff;
+        border: 2px solid transparent;
+        border-radius: 20px;
+
+        transition: color .2s linear, background .2s linear, border-color .2s linear;
+
+        &:hover {
+            color: #fff;
+            background: transparent;
+            border-color: #fff;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    @media @tablet {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+}

@@ -1,0 +1,119 @@
+// main: ../style.less
+
+.tourist__inner{
+    padding: 200px 83px 0;
+
+    @media @notebook-lg{
+        padding: 200px 73px 0;
+    }
+    @media @notebook{
+        padding: 160px 63px 0;
+    }
+    @media @tablet{
+        padding: 120px 30px 0;
+    }
+    @media @mobile{
+        padding: 80px 15px 0;
+    }
+}
+.tourist__title{
+    margin: 0 auto 90px;
+    width: 100%;
+    max-width: 700px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: #263238;
+    text-align: center;
+
+    @media @notebook{
+        font-size: 30px;
+    }
+    @media @mobile-sm{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+.tourist__col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tourist__column{
+    width: 50%;
+    margin-bottom: 66px;
+    padding: 0 33px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    &--link{
+        align-items: center;
+    }
+    @media @tablet{
+        padding: 0 10px;
+    }
+    @media @mobile{
+        width: 100%;
+
+        &--order-1{
+            order: 1;
+        }
+        &--order-2{
+            order: 2;
+        }
+        &--empty{
+            display: none;
+        }
+    }
+}
+.tourist__content{
+    padding: 73px 102px 73px 73px;
+
+    background: #fff;
+    border-radius: 20px;
+
+    box-shadow: 27px 27px 43px fade(#205eab, 10%);
+
+    @media @notebook{
+        padding: 40px;
+    }
+    @media @mobile-sm{
+        padding: 10px;
+    }
+}
+.tourist__col-title{
+    margin-bottom: 55px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #263238;
+
+    @media @mobile-sm{
+        text-align: center;
+    }
+}
+.tourist__col-text{
+    font-size: 18px;
+    color: #546e7a;
+}
+.tourist__link{
+    padding: 27px 66px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+
+    background: #2870db;
+    border-radius: 40px;
+
+    &:hover{
+        box-shadow: 0 22px 24px fade(#1153a5 , 20%);
+    }
+    @media @mobile{
+        padding: 20px 50px;
+    }
+}

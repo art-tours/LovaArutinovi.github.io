@@ -1,0 +1,75 @@
+// main: ../style.less
+
+.statistics__inner{
+    padding: 150px 116px 100px;
+
+    @media @notebook-lg{
+        padding: 100px 100px;
+    }
+    @media @tablet{
+        padding: 80px 30px;
+    }
+    @media @mobile{
+        padding: 40px 15px;
+    }
+}
+.statistics__title{
+    margin: 0 auto 90px;
+    width: 100%;
+    max-width: 1000px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: #263238;
+    text-align: center;
+
+    @media @notebook{
+        font-size: 30px;
+    }
+    @media @mobile-sm{
+        font-size: 24px;
+    }
+}
+.statistics__cols{
+    display: flex;
+    
+    justify-content: space-between;
+
+    @media @mobile{
+        flex-wrap: wrap;
+    }
+}
+.statistics__col{
+
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media @mobile{
+        max-width: 100%;
+
+        margin-bottom: 70px;
+    }
+}
+.statistics__text{
+    font-size: 22px;
+    color: #263238;
+
+    @media @tablet{
+        font-size: 18px;
+    }
+}
+.statistics__quantity{
+    margin: 30px 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    color: #1a56a3;
+
+    @media @tablet{
+        font-size: 25px;
+        margin: 15px 0;
+    }
+}
