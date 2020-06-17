@@ -2,6 +2,7 @@ body{
     font-family: 'Mada', sans-serif;
     font-size: 14px;
     color: $Dblue;
+    overflow-x: hidden;
 }
 *,
 *:before,
@@ -9,9 +10,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.wrapper{
-    overflow: hidden;
 }
 .container{
     width: 100%;
