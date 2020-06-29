@@ -1,3 +1,11 @@
+@media(max-width:1368px){
+    .header{
+        padding: 30px 0;
+    }
+    .intro{
+        padding: 80px 0;
+    }
+}
 @media(max-width:1255px){
     .intro{
         &__text{
@@ -20,11 +28,7 @@
     }
 }
 @media(max-width:1100px){
-    .header{
-        padding: 30px 0;
-    }
     .intro{
-        padding: 100px 0;
         &__text{
             &-title{
                 margin: 140px 0 9px;

@@ -40,9 +40,4 @@ $(document).ready(function () {
         this.classList.toggle('active');
         document.querySelector('.nav').classList.toggle('active');
     }
-    document.querySelector('.nav a').onclick = function(){
-        document.querySelector('.header__burger').classList.remove('active');
-        document.querySelector('.nav').classList.remove('active');
-    }
-    
 });
