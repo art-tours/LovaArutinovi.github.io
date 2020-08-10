@@ -2,6 +2,9 @@
     .intro {
         padding-top: 150px;
     }
+    .delivery__features,.contacts__features{
+        justify-content: space-around;
+    }
 }
 
 @media(max-width:1366px) {
