@@ -1,0 +1,342 @@
+@media(max-width:1600px) {
+    .intro {
+        padding-top: 150px;
+    }
+}
+
+@media(max-width:1366px) {
+    .title {
+        font-size: 44px;
+    }
+}
+
+@media(max-width:1100px) {
+    .delivery__box {
+        max-width: 400px;
+
+        &-title {
+            font-size: 20px;
+        }
+
+        &-text {
+            font-size: 16px;
+        }
+    }
+    .contacts__box{
+        &-title{
+            font-size: 20px;
+        }
+        &-text{
+            font-size: 16px;
+        }
+    }
+    .contacts__box-map #gmap_canvas {
+        width: 400px;
+        height: 260px;
+    }
+}
+
+@media(max-width:1024px) {
+    .title {
+        font-size: 36px;
+        &:before{
+            bottom: -15px;
+        }
+    }
+
+    .categories__category {
+        padding: 12px 20px;
+        font-size: 20px;
+    }
+
+    .catalog__item {
+        margin: 0 15px 30px;
+        max-width: 200px;
+
+        &-img {
+            max-width: 200px;
+            max-height: 150px;
+        }
+
+        &-title {
+            font-size: 16px;
+        }
+
+        &:before,
+        &:after {
+            height: 40px;
+            bottom: 65px;
+        }
+
+        &-data__price {
+            font-size: 16px;
+        }
+
+        &-data__add {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:900px) {
+    .header {
+        position: fixed;
+    }
+
+    .nav {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 50px;
+
+        background: $black;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s, box-shadow 1.5s;
+
+        &__link {
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        &.active {
+            box-shadow: 0 0 5px $red;
+            visibility: visible;
+            opacity: 1;
+            right: 0;
+        }
+    }
+
+    .header__basket {
+        margin: 0;
+    }
+
+    .basket {
+        width: 320px;
+    }
+
+    .header__burger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            transition: all linear .3s;
+
+            &:nth-child(1) {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(3) {
+                top: auto;
+                bottom: 0;
+            }
+        }
+
+        &.active {
+            span {
+                &:nth-child(1) {
+                    top: 14px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    left: -100%;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(-50%);
+                }
+
+                &:nth-child(3) {
+                    bottom: 13px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .delivery__features {
+        justify-content: center;
+    }
+    .about__descr{
+        &-title{
+            font-size: 20px;
+        }
+        &-founder{
+            font-size: 18px;
+        }
+        &-text{
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .contacts__features {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .contacts__box-map {
+        padding-left: 0;
+        #gmap_canvas {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .about__content{
+        flex-direction: column;
+    }
+    .about__descr,.about__img{
+        max-width: 100%;
+    }
+    .about__img{
+        min-width: 300px;
+    }
+    .about__descr-title{
+        margin: 30px 0 30px;
+    }
+}
+
+@media(max-width:660px) {
+    .header__logo {
+        a {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
+    .header__basket {
+        button {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
+    .intro {
+        &__title {
+            font-size: 48px;
+        }
+
+        &__subtitle {
+            font-size: 26px;
+        }
+
+        &__link {
+            font-size: 18px;
+            padding: 5px 20px;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .container--menu {
+        padding: 0 5px;
+    }
+
+    .catalog__item {
+        max-width: 140px;
+        margin: 0 5px 20px;
+
+        &-title {
+            font-size: 14px;
+        }
+
+        &-data {
+            margin-top: 15px;
+            padding: 0;
+        }
+
+        &:before,
+        &:after {
+            height: 20px;
+            bottom: 35px;
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .title{
+        font-size: 30px;
+        margin-bottom: 20px;
+        &:before{
+            width: 60px;
+            bottom: -10px;
+        }
+    }
+    .categories__category {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:380px) {
+    .intro {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__link {
+            font-size: 15px;
+            padding: 5px 20px;
+        }
+    }
+}
+
+@media(max-width:360px) {
+    .categories__category {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:330px) {
+    .catalog__item {
+        margin: 0 5px 20px;
+
+        &-title {
+            font-size: 14px;
+        }
+
+        &-data {
+            margin-top: 15px;
+            padding: 0;
+        }
+
+        &:before,
+        &:after {
+            height: 20px;
+            bottom: 35px;
+        }
+    }
+}
