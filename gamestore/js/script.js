@@ -39,6 +39,7 @@ $('.intro__img-slider').slick({
    slidesToScroll: 1,
    arrows: false,
    fade: true,
+   asNavFor: '.intro__slider',
 });
 $('.tsg__slider').slick({
    fade: true,
@@ -73,8 +74,8 @@ document.querySelector(".header__search-button").onclick = function () {
 /*recomend nav */
 
 let recNav = document.querySelectorAll('.recomend__nav-link');
-for (i = 0; i < recNav.length; i++){
-   recNav[i].onclick = function(event){ 
+for (i = 0; i < recNav.length; i++) {
+   recNav[i].onclick = function (event) {
       for (let k = 0; k < recNav.length; k++) {
          recNav[k].classList.remove('active');
       }
@@ -87,76 +88,62 @@ for (i = 0; i < recNav.length; i++){
 
 // let catalogG = document.querySelectorAll('.catalog__games');
 
-$("[data-catalog-link]").on("click" , function(event){
+$("[data-catalog-link]").on("click", function (event) {
    event.preventDefault();
    let catalog = document.querySelectorAll('[data-catalog]');
    let $this = $(this).data('catalog-link');
-   for(i = 0; i <catalog.length;i++){
+   for (i = 0; i < catalog.length; i++) {
       catalog[i].classList.remove('active');
-      if( catalog[i].getAttribute('data-catalog') == $this)
+      if (catalog[i].getAttribute('data-catalog') == $this)
          catalog[i].classList.add('active')
-      }
    }
-  
-   // for(i = 0; i <catalogR.length;i++){
-   //    catalogR[i].classList.remove('active');
-   //    if( '#' + catalogR[i].getAttribute('id') == $this){
-   //       document.querySelector($this).classList.add('active');
-   //    }
-   // }
-   // for(i = 0; i <catalogG.length;i++){
-   //    catalogG[i].classList.remove('active');
-   //    if( '#' + catalogG[i].getAttribute('id') == $this){
-   //       document.querySelector($this).classList.add('active');
-   //    }
-   // }
-
 });
 
 
 /* costum select catalog */
-$('select').each(function(){
-   var $this = $(this), numberOfOptions = $(this).children('option').length;
- 
-   $this.addClass('select-hidden'); 
+$('select').each(function () {
+   var $this = $(this),
+      numberOfOptions = $(this).children('option').length;
+
+   $this.addClass('select-hidden');
    $this.wrap('<div class="select"></div>');
    $this.after('<div class="select-styled"></div>');
 
    var $styledSelect = $this.next('div.select-styled');
    $styledSelect.text($this.children('option').eq(0).text());
- 
+
    var $list = $('<ul />', {
-       'class': 'select-options'
+      'class': 'select-options'
    }).insertAfter($styledSelect);
- 
+
    for (var i = 0; i < numberOfOptions; i++) {
-       $('<li />', {
-           text: $this.children('option').eq(i).text(),
-           rel: $this.children('option').eq(i).val()
-       }).appendTo($list);
+      $('<li />', {
+         text: $this.children('option').eq(i).text(),
+         rel: $this.children('option').eq(i).val()
+      }).appendTo($list);
    }
- 
+
    var $listItems = $list.children('li');
- 
-   $styledSelect.click(function(e) {
-       e.stopPropagation();
-       $('div.select-styled.active').not(this).each(function(){
-           $(this).removeClass('active').next('ul.select-options').hide();
-       });
-       $(this).toggleClass('active').next('ul.select-options').toggle();
+
+   $styledSelect.click(function (e) {
+      e.stopPropagation();
+      $('div.select-styled.active').not(this).each(function () {
+         $(this).removeClass('active').next('ul.select-options').hide();
+      });
+      $(this).toggleClass('active').next('ul.select-options').toggle();
    });
- 
-   $listItems.click(function(e) {
-       e.stopPropagation();
-       $styledSelect.text($(this).text()).removeClass('active');
-       $this.val($(this).attr('rel'));
-       $list.hide();
-       //console.log($this.val());
+
+   $listItems.click(function (e) {
+      e.stopPropagation();
+      $styledSelect.text($(this).text()).removeClass('active');
+      $this.val($(this).attr('rel'));
+      $list.hide();
+      //console.log($this.val());
    });
- 
-   $(document).click(function() {
-       $styledSelect.removeClass('active');
-       $list.hide();
+
+   $(document).click(function () {
+      $styledSelect.removeClass('active');
+      $list.hide();
    });
 
 });

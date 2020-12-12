@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="5.242" viewBox="0 0 14.937 5.242">
-  <g id="arrow" transform="translate(-1485.818 -379.818)">
-    <line id="Line_10" data-name="Line 10" x2="6.786" y2="3.878" transform="translate(1486.5 380.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
-    <line id="Line_11" data-name="Line 11" x1="6.786" y2="3.878" transform="translate(1493.286 380.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="5.242"><g fill="none" stroke="#fff" stroke-linecap="round"><path data-name="Line 10" d="M.682.682L7.468 4.56"/><path data-name="Line 11" d="M14.254.682L7.468 4.56"/></g></svg>
