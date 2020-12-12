@@ -1,1 +1,743 @@
-<!DOCTYPE html><html lang="en"><head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Game store</title>   <link rel="stylesheet" href="css/style.min.css"></head><body>   <div class="wrapper">      <header class="header">   <div class="container">      <div class="header__inner">         <div class="header__logo">            <a href="index.html">               <picture><source srcset="img/logo.svg" type="image/webp"><img src="img/logo.svg" alt=""></picture>            </a>         </div>         <form action="#" class="header__search">            <input type="text" placeholder="Search...">            <button><picture><source srcset="img/search.svg" type="image/webp"><img src="img/search.svg" alt=""></picture></button>         </form>         <nav class="header__nav">            <a href="index.html" class="header__nav-link">home</a>            <a href="catalog.html" class="header__nav-link">catalog</a>            <a href="aboutus.html" class="header__nav-link">about us</a>            <a href="#" class="header__nav-link">               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.902" viewBox="0 0 18 15.902">                  <g id="like" transform="translate(0 -29.836)">                     <g id="Group_20" data-name="Group 20" transform="translate(0 29.836)">                        <path id="Path_7" data-name="Path 7"                           d="M16.687,31.4a4.534,4.534,0,0,0-7.239.521A6.9,6.9,0,0,0,9,32.646a6.9,6.9,0,0,0-.448-.727A4.534,4.534,0,0,0,1.313,31.4,5.456,5.456,0,0,0,0,35.022a6.681,6.681,0,0,0,1.84,4.384,40.969,40.969,0,0,0,4.606,4.3c.7.594,1.417,1.207,2.184,1.878l.023.02a.527.527,0,0,0,.695,0l.023-.02c.767-.671,1.487-1.285,2.184-1.878a40.963,40.963,0,0,0,4.606-4.3A6.682,6.682,0,0,0,18,35.022,5.456,5.456,0,0,0,16.687,31.4ZM10.87,42.906c-.6.512-1.218,1.038-1.87,1.6-.652-.566-1.27-1.093-1.87-1.6-3.658-3.117-6.075-5.177-6.075-7.884A4.4,4.4,0,0,1,2.1,32.1a3.52,3.52,0,0,1,2.677-1.2,3.555,3.555,0,0,1,2.91,1.638A6.252,6.252,0,0,1,8.5,34.134a.527.527,0,0,0,1,0,6.253,6.253,0,0,1,.807-1.605A3.481,3.481,0,0,1,15.9,32.1a4.4,4.4,0,0,1,1.05,2.927C16.945,37.729,14.528,39.789,10.87,42.906Z"                           transform="translate(0 -29.836)" fill="#fff" />                     </g>                  </g>               </svg>            </a>            <a href="#" class="header__nav-link">                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"                  xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0"                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">                  <g>                     <g xmlns="http://www.w3.org/2000/svg">                        <g>                           <path                              d="M508.764,74.466c-2.803-3.503-7.046-5.542-11.533-5.542H104.152L93.16,21.294c-1.547-6.701-7.514-11.448-14.391-11.448    h-64C6.613,9.846,0,16.459,0,24.616s6.613,14.769,14.769,14.769H67.02l74.612,323.321c1.546,6.701,7.514,11.448,14.391,11.448    h295.915c8.157,0,14.769-6.613,14.769-14.769c0-8.157-6.613-14.769-14.769-14.769H167.773l-11.36-49.231h296.511    c6.908,0,12.893-4.788,14.409-11.527L511.64,86.935C512.625,82.557,511.567,77.97,508.764,74.466z M441.108,265.846H149.596    L110.969,98.462h367.8L441.108,265.846z"                              fill="#ffffff" data-original="#000000" style="" />                        </g>                     </g>                     <g xmlns="http://www.w3.org/2000/svg">                        <g>                           <path                              d="M216.615,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154    S246.476,393.846,216.615,393.846z M216.615,472.616C203.042,472.616,192,461.573,192,448s11.042-24.615,24.615-24.615    c13.573,0,24.615,11.042,24.615,24.615S230.188,472.616,216.615,472.616z"                              fill="#ffffff" data-original="#000000" style="" />                        </g>                     </g>                     <g xmlns="http://www.w3.org/2000/svg">                        <g>                           <path                              d="M393.846,393.846c-29.86,0-54.154,24.293-54.154,54.154s24.293,54.154,54.154,54.154c29.86,0,54.154-24.293,54.154-54.154    S423.707,393.846,393.846,393.846z M393.846,472.616c-13.573,0-24.615-11.042-24.615-24.615s11.042-24.615,24.615-24.615    c13.573,0,24.615,11.042,24.615,24.615S407.419,472.616,393.846,472.616z"                              fill="#ffffff" data-original="#000000" style="" />                        </g>                     </g>               </svg>            </a>            <div class="header__sing">               <a href="#">sing in</a>            </div>         </nav>         <!-- <div class="header__sing">            <a href="#">sing in</a>         </div> -->         <div class="header__search-button">            <picture><source srcset="img/search.svg" type="image/webp"><img src="img/search.svg" alt=""></picture>         </div>         <div class="header__burger">            <span></span>            <span></span>            <span></span>         </div>      </div>   </div></header>      <main class="main">         <section class="intro">            <div class="intro__img">               <div class="intro__img-slider">                  <div style="background-image:url(../img/WatchDogsLegion.png);"></div>                  <div style="background-image:url(../img/cyberpunk.jpg);"></div>                  <div style="background-image:url(../img/doom-eternal.jpg);"></div>                  <div style="background-image:url(../img/valhalla.jpg);"></div>               </div>               <div class="intro__img-mask"></div>            </div>            <div class="container">               <div class="intro__inner">                  <div class="intro__slider">                     <div class="intro__slider-slide">                        <h1 class="intro__slider-title">Watch Dogs Legion</h1>                        <h3 class="intro__slider-subtitle"></h3>                        <a class="intro__slider-cart" href="product.html">                           <p class="intro__slider-cart-price">20$</p>                           <p>Add to Cart</p>                        </a>                        <div class="intro__slider-counter">                           <p class="intro__slider-counter-count">01</p>                           <p class="intro__slider-counter-all">04</p>                        </div>                     </div>                     <div class="intro__slider-slide">                        <h1 class="intro__slider-title">cyberpunk 2077</h1>                        <h3 class="intro__slider-subtitle"></h3>                        <a class="intro__slider-cart" href="#">                           <p class="intro__slider-cart-price">45$</p>                           <p>Add to Cart</p>                        </a>                        <div class="intro__slider-counter">                           <p class="intro__slider-counter-count">02</p>                           <p class="intro__slider-counter-all">04</p>                        </div>                     </div>                     <div class="intro__slider-slide">                        <h1 class="intro__slider-title">doom eternal</h1>                        <h3 class="intro__slider-subtitle"></h3>                        <a class="intro__slider-cart" href="#">                           <p class="intro__slider-cart-price">30$</p>                           <p>Add to Cart</p>                        </a>                        <div class="intro__slider-counter">                           <p class="intro__slider-counter-count">03</p>                           <p class="intro__slider-counter-all">04</p>                        </div>                     </div>                     <div class="intro__slider-slide">                        <h1 class="intro__slider-title">Assassin’s Creed Valhalla</h1>                        <h3 class="intro__slider-subtitle"></h3>                        <a class="intro__slider-cart" href="#">                           <p class="intro__slider-cart-price">35$</p>                           <p>Add to Cart</p>                        </a>                        <div class="intro__slider-counter">                           <p class="intro__slider-counter-count">04</p>                           <p class="intro__slider-counter-all">04</p>                        </div>                     </div>                  </div>                  <div class="intro__tsg">                     <h2 class="tsg__title">Top Sales Games</h2>                     <div class="tsg__slider">                        <div class="tsg__slider-slide">                           <div class="tsg__slider-row">                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">Player Unknown's Battle grounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                           </div>                           <div class="tsg__slider-counter">                              <p class="tsg__slider-counter-count">01</p>                              <p class="tsg__slider-counter-all">04</p>                           </div>                        </div>                        <div class="tsg__slider-slide">                           <div class="tsg__slider-row">                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                           </div>                           <div class="tsg__slider-counter">                              <p class="tsg__slider-counter-count">02</p>                              <p class="tsg__slider-counter-all">04</p>                           </div>                        </div>                        <div class="tsg__slider-slide">                           <div class="tsg__slider-row">                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                           </div>                           <div class="tsg__slider-counter">                              <p class="tsg__slider-counter-count">03</p>                              <p class="tsg__slider-counter-all">04</p>                           </div>                        </div>                        <div class="tsg__slider-slide">                           <div class="tsg__slider-row">                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                              <article class="game">                                 <picture><source srcset="img/games/29.webp" type="image/webp"><img src="img/games/29.jpg" class="game__img"></picture></img>                                 <div class="game__info">                                    <h3 class="game__title">Player Unknown's Battle grounds</h3>                                    <p class="game__price">10$</p>                                    <div class="game__action">                                       <a href="#" class="game__heart">                                          <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                       </a>                                       <a href="#" class="game__cart">                                          buy                                       </a>                                    </div>                                 </div>                              </article>                           </div>                           <div class="tsg__slider-counter">                              <p class="tsg__slider-counter-count">04</p>                              <p class="tsg__slider-counter-all">04</p>                           </div>                        </div>                     </div>                  </div>               </div>            </div>         </section>         <section class="recomend">            <div class="container">               <div class="recomend__inner">                  <nav class="recomend__nav">                     <a href="#" class="recomend__nav-link active" data-catalog-link="new">new</a>                     <a href="#" class="recomend__nav-link" data-catalog-link="popular">popular</a>                     <a href="#" class="recomend__nav-link" data-catalog-link="pre-order">pre-order</a>                  </nav>                  <div class="recomend__catalog active" data-catalog="new">                     <div class="recomend__catalog-items">                        <article class="game">                           <picture><source srcset="img/games/2.webp" type="image/webp"><img src="img/games/2.jpeg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/14.webp" type="image/webp"><img src="img/games/14.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/3.webp" type="image/webp"><img src="img/games/3.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/4.webp" type="image/webp"><img src="img/games/4.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/5.webp" type="image/webp"><img src="img/games/5.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/6.webp" type="image/webp"><img src="img/games/6.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/7.webp" type="image/webp"><img src="img/games/7.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/8.webp" type="image/webp"><img src="img/games/8.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/9.webp" type="image/webp"><img src="img/games/9.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/10.webp" type="image/webp"><img src="img/games/10.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/12.webp" type="image/webp"><img src="img/games/12.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/13.webp" type="image/webp"><img src="img/games/13.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                     </div>                     <div class="recomend__catalog-more">                        <a href="#">view all</a>                     </div>                  </div>                  <div class="recomend__catalog" data-catalog="popular">                     <div class="recomend__catalog-items">                        <article class="game">                           <picture><source srcset="img/games/6.webp" type="image/webp"><img src="img/games/6.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/7.webp" type="image/webp"><img src="img/games/7.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/8.webp" type="image/webp"><img src="img/games/8.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/9.webp" type="image/webp"><img src="img/games/9.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/10.webp" type="image/webp"><img src="img/games/10.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/12.webp" type="image/webp"><img src="img/games/12.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/13.webp" type="image/webp"><img src="img/games/13.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                     </div>                     <div class="recomend__catalog-more">                        <a href="#">view all</a>                     </div>                  </div>                  <div class="recomend__catalog" data-catalog="pre-order">                     <div class="recomend__catalog-items">                        <article class="game">                           <picture><source srcset="img/games/6.webp" type="image/webp"><img src="img/games/6.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/7.webp" type="image/webp"><img src="img/games/7.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/8.webp" type="image/webp"><img src="img/games/8.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/9.webp" type="image/webp"><img src="img/games/9.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                        <article class="game">                           <picture><source srcset="img/games/10.webp" type="image/webp"><img src="img/games/10.jpg" class="game__img"></picture></img>                           <div class="game__info">                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>                              <p class="game__price">10$</p>                              <div class="game__action">                                 <a href="#" class="game__heart">                                    <picture><source srcset="img/like.svg" type="image/webp"><img src="img/like.svg" alt=""></picture>                                 </a>                                 <a href="#" class="game__cart">                                    buy                                 </a>                              </div>                           </div>                        </article>                     </div>                     <div class="recomend__catalog-more">                        <a href="#">view all</a>                     </div>                  </div>               </div>            </div>         </section>         <section class="blog">            <div class="container">               <div class="blog__inner">                  <h1 class="blog__title">our blog</h1>                  <div class="blog__items">                     <div class="blog__item">                        <div class="blog__item-img">                           <picture><source srcset="img/blogs/1.webp" type="image/webp"><img src="img/blogs/1.jpg" alt=""></picture>                        </div>                        <h3 class="blog__item-title"><a href="#">far cry 6</a></h3>                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting                           industry.                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown                           printer took a galley of type and scrambled it to make a type specimen book.</p>                     </div>                     <div class="blog__item">                        <div class="blog__item-img">                           <picture><source srcset="img/blogs/2.webp" type="image/webp"><img src="img/blogs/2.jpg" alt=""></picture>                        </div>                        <h3 class="blog__item-title"><a href="#">Cyberpunk 2077</a></h3>                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting                           industry.                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown                           printer took a galley of type and scrambled it to make a type specimen book.</p>                     </div>                     <div class="blog__item">                        <div class="blog__item-img">                           <picture><source srcset="img/blogs/3.webp" type="image/webp"><img src="img/blogs/3.jpg" alt=""></picture>                        </div>                        <h3 class="blog__item-title"><a href="#">watch dogs: legion</a></h3>                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting                           industry.                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown                           printer took a galley of type and scrambled it to make a type specimen book.</p>                     </div>                  </div>                  <div class="blog__more">                     <a href="#">view all</a>                  </div>               </div>            </div>         </section>      </main>      <footer class="footer">   <div class="container">      <div class="footer__inner">         <div class="footer__logo">            <a href="#">               <picture><source srcset="img/footer-logo.svg" type="image/webp"><img src="img/footer-logo.svg" alt=""></picture>            </a>         </div>         <div class="footer__newsletter">            <h3 class="footer__newsletter-title">RECEIVE EMAIL UPDATES</h3>            <div class="footer__form">               <input type="text" placeholder="Your Email...">               <button>Join</button>            </div>         </div>      </div>      <div class="footer__text">         <p class="footer__copy">Copyright © 2020 . GAME STORE  All rights reserved</p>         <p class="footer__author">Designed by <a href="#">Lova</a></p>      </div>   </div></footer>   </div>   <script src="https://code.jquery.com/jquery-3.5.1.min.js"      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>   <script src="js/script.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game store</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <div class="wrapper">
+
+      @@include('_header.html')
+      <main class="main">
+         <section class="intro">
+            <div class="intro__img">
+               <div class="intro__img-slider">
+                  <div style="background-image:url(img/WatchDogsLegion.png);"></div>
+                  <div style="background-image:url(img/cyberpunk.jpg);"></div>
+                  <div style="background-image:url(img/doom-eternal.jpg);"></div>
+                  <div style="background-image:url(img/valhalla.jpg);"></div>
+               </div>
+               <div class="intro__img-mask"></div>
+            </div>
+            <div class="container">
+               <div class="intro__inner">
+                  <div class="intro__slider">
+                     <div class="intro__slider-slide">
+                        <h1 class="intro__slider-title">Watch Dogs Legion</h1>
+                        <h3 class="intro__slider-subtitle"></h3>
+                        <a class="intro__slider-cart" href="product.html">
+                           <p class="intro__slider-cart-price">20$</p>
+                           <p>Add to Cart</p>
+                        </a>
+                        <div class="intro__slider-counter">
+                           <p class="intro__slider-counter-count">01</p>
+                           <p class="intro__slider-counter-all">04</p>
+                        </div>
+                     </div>
+                     <div class="intro__slider-slide">
+                        <h1 class="intro__slider-title">cyberpunk 2077</h1>
+                        <h3 class="intro__slider-subtitle"></h3>
+                        <a class="intro__slider-cart" href="#">
+                           <p class="intro__slider-cart-price">45$</p>
+                           <p>Add to Cart</p>
+                        </a>
+                        <div class="intro__slider-counter">
+                           <p class="intro__slider-counter-count">02</p>
+                           <p class="intro__slider-counter-all">04</p>
+                        </div>
+                     </div>
+                     <div class="intro__slider-slide">
+                        <h1 class="intro__slider-title">doom eternal</h1>
+                        <h3 class="intro__slider-subtitle"></h3>
+                        <a class="intro__slider-cart" href="#">
+                           <p class="intro__slider-cart-price">30$</p>
+                           <p>Add to Cart</p>
+                        </a>
+                        <div class="intro__slider-counter">
+                           <p class="intro__slider-counter-count">03</p>
+                           <p class="intro__slider-counter-all">04</p>
+                        </div>
+                     </div>
+                     <div class="intro__slider-slide">
+                        <h1 class="intro__slider-title">Assassin’s Creed Valhalla</h1>
+                        <h3 class="intro__slider-subtitle"></h3>
+                        <a class="intro__slider-cart" href="#">
+                           <p class="intro__slider-cart-price">35$</p>
+                           <p>Add to Cart</p>
+                        </a>
+                        <div class="intro__slider-counter">
+                           <p class="intro__slider-counter-count">04</p>
+                           <p class="intro__slider-counter-all">04</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="intro__tsg">
+                     <h2 class="tsg__title">Top Sales Games</h2>
+                     <div class="tsg__slider">
+                        <div class="tsg__slider-slide">
+                           <div class="tsg__slider-row">
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">Player Unknown's Battle grounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="tsg__slider-counter">
+                              <p class="tsg__slider-counter-count">01</p>
+                              <p class="tsg__slider-counter-all">04</p>
+                           </div>
+                        </div>
+                        <div class="tsg__slider-slide">
+                           <div class="tsg__slider-row">
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="tsg__slider-counter">
+                              <p class="tsg__slider-counter-count">02</p>
+                              <p class="tsg__slider-counter-all">04</p>
+                           </div>
+                        </div>
+                        <div class="tsg__slider-slide">
+                           <div class="tsg__slider-row">
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="tsg__slider-counter">
+                              <p class="tsg__slider-counter-count">03</p>
+                              <p class="tsg__slider-counter-all">04</p>
+                           </div>
+                        </div>
+                        <div class="tsg__slider-slide">
+                           <div class="tsg__slider-row">
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="game">
+                                 <img src="img/games/29.jpg" class="game__img"></img>
+                                 <div class="game__info">
+                                    <h3 class="game__title">Player Unknown's Battle grounds</h3>
+                                    <p class="game__price">10$</p>
+                                    <div class="game__action">
+                                       <a href="#" class="game__heart">
+                                          <img src="img/like.svg" alt="">
+                                       </a>
+                                       <a href="#" class="game__cart">
+                                          buy
+                                       </a>
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="tsg__slider-counter">
+                              <p class="tsg__slider-counter-count">04</p>
+                              <p class="tsg__slider-counter-all">04</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="recomend">
+            <div class="container">
+               <div class="recomend__inner">
+                  <nav class="recomend__nav">
+                     <a href="#" class="recomend__nav-link active" data-catalog-link="new">new</a>
+                     <a href="#" class="recomend__nav-link" data-catalog-link="popular">popular</a>
+                     <a href="#" class="recomend__nav-link" data-catalog-link="pre-order">pre-order</a>
+                  </nav>
+                  <div class="recomend__catalog active" data-catalog="new">
+                     <div class="recomend__catalog-items">
+                        <article class="game">
+                           <img src="img/games/2.jpeg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/14.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/3.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/4.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/5.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/6.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/7.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/8.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/9.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/10.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/12.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/13.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+
+                     </div>
+                     <div class="recomend__catalog-more">
+                        <a href="#">view all</a>
+                     </div>
+                  </div>
+                  <div class="recomend__catalog" data-catalog="popular">
+                     <div class="recomend__catalog-items">
+                        <article class="game">
+                           <img src="img/games/6.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/7.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/8.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/9.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/10.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/12.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/13.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                     <div class="recomend__catalog-more">
+                        <a href="#">view all</a>
+                     </div>
+                  </div>
+                  <div class="recomend__catalog" data-catalog="pre-order">
+                     <div class="recomend__catalog-items">
+                        <article class="game">
+                           <img src="img/games/6.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/7.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/8.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/9.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="game">
+                           <img src="img/games/10.jpg" class="game__img"></img>
+                           <div class="game__info">
+                              <h3 class="game__title">PlayerUnknown's Battlegrounds</h3>
+                              <p class="game__price">10$</p>
+                              <div class="game__action">
+                                 <a href="#" class="game__heart">
+                                    <img src="img/like.svg" alt="">
+                                 </a>
+                                 <a href="#" class="game__cart">
+                                    buy
+                                 </a>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                     <div class="recomend__catalog-more">
+                        <a href="#">view all</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="blog">
+            <div class="container">
+               <div class="blog__inner">
+                  <h1 class="blog__title">our blog</h1>
+                  <div class="blog__items">
+                     <div class="blog__item">
+                        <div class="blog__item-img">
+                           <img src="img/blogs/1.jpg" alt="">
+                        </div>
+                        <h3 class="blog__item-title"><a href="#">far cry 6</a></h3>
+                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry.
+                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                           printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                     <div class="blog__item">
+                        <div class="blog__item-img">
+                           <img src="img/blogs/2.jpg" alt="">
+                        </div>
+                        <h3 class="blog__item-title"><a href="#">Cyberpunk 2077</a></h3>
+                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry.
+                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                           printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                     <div class="blog__item">
+                        <div class="blog__item-img">
+                           <img src="img/blogs/3.jpg" alt="">
+                        </div>
+                        <h3 class="blog__item-title"><a href="#">watch dogs: legion</a></h3>
+                        <p class="blog__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry.
+                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                           printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
+                  <div class="blog__more">
+                     <a href="#">view all</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('_footer.html')
+
+   </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script src="js/script.min.js"></script>
+</body>
+
+</html>
