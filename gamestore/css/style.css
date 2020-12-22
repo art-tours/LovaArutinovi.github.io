@@ -758,6 +758,8 @@ body {
 .recomend__nav-link.active {
   border-color: #621EC9;
   color: #621EC9;
+  -webkit-box-shadow: 0 0 10px #621EC9;
+          box-shadow: 0 0 10px #621EC9;
 }
 
 /**************** Header ****************/
@@ -1360,6 +1362,8 @@ body {
 
 .recomend__catalog-more a:hover {
   background: #621EC9;
+  -webkit-box-shadow: 0 0 10px #621EC9;
+          box-shadow: 0 0 10px #621EC9;
 }
 
 /**************** Blog ****************/
@@ -1397,6 +1401,8 @@ body {
 
 .blog__more a:hover {
   background: #621EC9;
+  -webkit-box-shadow: 0 0 10px #621EC9;
+          box-shadow: 0 0 10px #621EC9;
 }
 
 .blog__items {
@@ -2721,8 +2727,16 @@ body {
     min-width: 250px;
   }
 
+  .blog__item-img {
+    height: 200px;
+  }
+
+  .blog__item-img img {
+    min-height: 200px;
+  }
+
   .blog__item-title {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 
   .blog__item-title a {
@@ -2731,7 +2745,8 @@ body {
   }
 
   .blog__item-text {
-    padding: 0 5px 15px;
+    font-size: 14px;
+    padding: 0 10px 15px;
   }
 
   .footer__form {
