@@ -2728,11 +2728,11 @@ body {
   }
 
   .blog__item-img {
-    height: 200px;
+    height: 170px;
   }
 
   .blog__item-img img {
-    min-height: 200px;
+    min-height: 170px;
   }
 
   .blog__item-title {
