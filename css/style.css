@@ -4445,8 +4445,8 @@ body {
 
 .section {
   padding-top: 160px;
-  min-height: calc(100vh - 160px);
-  max-height: calc(100vh - 160px);
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
   background: -o-linear-gradient(22.6deg, #3337C7 -5.33%, #08050E 68.2%);
   background: linear-gradient(67.4deg, #3337C7 -5.33%, #08050E 68.2%);
@@ -4487,7 +4487,7 @@ body {
 }
 
 .mouse {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5001,8 +5001,6 @@ body {
 
   .section {
     padding-top: 60px;
-    max-height: calc(100vh - 60px);
-    min-height: calc(100vh - 60px);
   }
 }
 

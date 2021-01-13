@@ -4291,16 +4291,22 @@ setTimeout(function () {
 //******** header on scroll
 header = document.querySelector(".header");
 headerH = document.querySelector(".header").clientHeight;
-window.onscroll = function () {
-   if (document.documentElement.scrollTop > headerH) {
-      header.classList.add("fixed");
-   }
-}
-window.onload = function () {
-   if (document.documentElement.scrollTop > headerH) {
-      header.classList.add("fixed");
-   }
-};
+$(function () {
+   let header = $('.header'),
+       headerH = header.innerHeight(),
+       scrollOffset = $(window).scrollTop();
+   $("[data-scroll]").on("click", function (event) {
+       event.preventDefault();
+
+       var $this = $(this),
+           blockId = $(this).data('scroll'),
+           blockOffset = $(blockId).offset().top;
+
+       $("html, body").animate({
+           scrollTop: blockOffset
+       }, 1000);
+   });
+});
 //******** burger menu
 document.querySelector(".header__burger").onclick = function () {
    this.classList.toggle("active");
@@ -4348,7 +4354,7 @@ $('.fullpage').fullpage({
    licenseKey: 'YOUR_KEY_HERE',
    scrollBar: true,
    scrollingSpeed: 900,
-   anchors: ['home', 'works', 'about'],
+   // anchors: ['home', 'works', 'about'],
    afterRender: function(){
       wow = new WOW({
          boxClass: 'wow', // default
