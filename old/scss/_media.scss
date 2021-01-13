@@ -1,0 +1,296 @@
+@media(max-width:1368px){
+    .header{
+        padding: 30px 0;
+    }
+    .intro{
+        padding: 80px 0;
+    }
+}
+@media(max-width:1255px){
+    .intro{
+        &__text{
+            &-title{
+                margin: 180px 0 9px;
+                font-size: 56px;
+                line-height: 70px;
+            }
+            &-subtitle{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &__img{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media(max-width:1100px){
+    .intro{
+        &__text{
+            &-title{
+                margin: 140px 0 9px;
+                font-size: 46px;
+                line-height: 60px;
+                letter-spacing: normal;
+            }
+            &-subtitle{
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        &__img{
+            img{
+                width: 450px;
+            }
+        }
+    }
+    .works__box{
+        margin: 0 10px 60px;
+    }
+}
+@media(max-width:1000px){
+    .title{
+        font-size: 40px;
+        &:after{
+            bottom: -10px;
+            width: 80px;
+        }
+    }
+    .about__ball-2{
+        width: 100px;
+        height: 100px;
+    }
+    .about__ball-3{
+        width: 90px;
+        height: 90px;
+    }
+    .skill__date{
+        flex-wrap: wrap;
+        .skill__box{
+            margin: 0 25px 30px;
+        }
+    }
+}
+@media(max-width:890px){
+    .intro{
+        &__text{
+            &-title{
+                margin: 100px 0 9px;
+                font-size: 46px;
+                line-height: 60px;
+            }
+            &-subtitle{
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        &__img{
+            img{
+                width: 350px;
+            }
+        }
+    }
+    .about__ball-2{
+        bottom: -35%;
+        top: auto;
+    }
+    .about__ball-3{
+        top: 0;
+    }
+}
+@media(max-width:750px){
+    .intro{
+        &__text{
+            &-title{
+                margin: 80px 0 9px;
+                font-size: 40px;
+                line-height: 50px;
+            }
+            &-subtitle{
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        &__img{
+            img{
+                width: 300px;
+            }
+        }
+        &__arrow-down{
+            img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+}
+@media(max-width:650px){
+    .header{
+        padding: 15px 0;
+    }
+    .intro{
+        &__inner{
+            flex-wrap: wrap;
+        }
+        &__img{
+            padding-top: 50px;
+            width: 100%;
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+            &-title{
+                margin: 0 0 9px;
+                font-size: 40px;
+                line-height: 50px;
+            }
+            &-subtitle{
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+@media(max-width:565px){
+    .header{
+        &__inner{
+            position: relative;
+        }
+        .nav{
+            overflow: hidden;
+            position: absolute;
+            top: 35px;
+            right: -100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 50px;
+
+            background: linear-gradient(121.52deg, #4939D1 11.24%, #974BE9 126.16%);
+            box-shadow: none;
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: all .5s, box-shadow 1.5s;
+            &__link{
+                margin: 15px 0;
+            }
+            &.active{
+                box-shadow: 0 0 5px #fff;
+                visibility: visible;
+                opacity: 1;
+                right: 0;
+            }
+        }
+        &__burger{
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 30px;
+            span{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                transition: all linear .3s;
+                &:nth-child(1){
+                    top: 0;
+                }
+                &:nth-child(2){
+                    transform: translateY(-50%);
+                }
+                &:nth-child(3){
+                    top: auto;
+                    bottom: 0;
+                }
+            }
+            &.active{
+                span{
+                    &:nth-child(1){
+                        top: 14px;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        left: -100%;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(-50%);
+                    }
+                    &:nth-child(3){
+                        bottom: 13px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+    .intro__arrow-down{
+        bottom: 10px;
+    }
+    .title{
+        font-size: 36px;
+        &:after{
+            bottom: 0;
+            width: 60px;
+        }
+    }
+    .about,.skill,.work,.contact{
+        padding: 40px 0;
+    }
+    .about__ball-1{
+        left: 0;
+    }
+    .about__ball-2{
+        bottom: -20%;
+        width: 60px;
+        height: 60px;
+    }
+    .about__ball-3{
+        top: 30px;
+        width: 55px;
+        height: 55px;
+    }
+    .skill__ball{
+        top: 30px;
+        width: 55px;
+        height: 55px;
+    }
+    .work__ball-1{
+        top: 46px;
+        width: 60px;
+        height: 60px;
+    }
+    .work__ball-2{
+        top: 50%;
+    }
+    .contacts__img-1{
+        display: none;
+    }
+    .contacts__img-2{
+        bottom: -110px;
+        left: 0;
+        width: 160px;
+        height: 160px;
+    }
+    .contacts__img-3{
+        top: 40px;
+        right: 0;
+    }
+    .contacts__img-4{
+        display: none;
+    }
+}
+@media(max-width:340px){
+    .intro__img{
+        img{
+            width: 200px;
+        }
+    }
+}
