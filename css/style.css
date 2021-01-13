@@ -4573,14 +4573,14 @@ body {
 }
 
 .preloader__text-line {
-  -webkit-animation: line .1s 7 forwards;
-          animation: line .1s 7 forwards;
+  -webkit-animation: line .05s 14 forwards;
+          animation: line .05s 14 forwards;
 }
 
 .preloader__text-line-19 {
   opacity: 0;
-  -webkit-animation: line .1s .7s 10 forwards;
-          animation: line .1s .7s 10 forwards;
+  -webkit-animation: line .05s .7s 19 forwards;
+          animation: line .05s .7s 19 forwards;
 }
 
 /**************** header ****************/
