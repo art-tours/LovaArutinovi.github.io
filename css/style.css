@@ -5046,6 +5046,10 @@ body {
     margin: 25px 0 60px 0;
   }
 
+  .mouse {
+    bottom: 75px;
+  }
+
   .mouse p {
     font-size: 12px;
   }
@@ -5247,8 +5251,23 @@ body {
 }
 
 @media (max-width: 675px) {
-  .home__inner {
+  .section {
     padding-top: 0;
+  }
+
+  .home__inner {
+    padding-top: 80px;
+  }
+
+  .works__inner {
+    padding-top: 80px;
+  }
+
+  .about__inner {
+    padding-top: 80px;
+  }
+
+  .home__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5350,14 +5369,6 @@ body {
   .getInTouch {
     padding: 16px 26px;
     font-size: 14px;
-  }
-
-  .works__inner {
-    padding-top: 15px;
-  }
-
-  .about__inner {
-    padding-top: 15px;
   }
 
   .about__text {

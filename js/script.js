@@ -4270,11 +4270,7 @@ let i = 0,text;
             setTimeout(typing,50);
          }
       }
-setTimeout(function () {
-      
-      typing();
-}, 100);
-
+typing();
 setTimeout(function () {
    let k = 0,text_2;
    text_2 = "Front-end Developer";
@@ -4287,7 +4283,7 @@ setTimeout(function () {
    }
    typing_2();
 }, 700);
-
+ 
 setTimeout(function () {
    document.querySelector(".preloader").style.display = 'none';
    document.querySelector("body").style.overflow = 'visible';
