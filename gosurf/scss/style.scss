@@ -124,7 +124,7 @@
     }
 }
 .nav{
-    margin-top: 50px;
+    margin-top: 120px;
     
     &__inner{
         display: flex;
@@ -139,8 +139,12 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        align-items: center;
         margin-bottom: 20px;
         text-decoration: none;
+        img{
+            max-width: 60px;
+        }
         span{
             display: inline-block;
             margin-top: 6px;
