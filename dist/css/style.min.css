@@ -2925,6 +2925,7 @@ body {
     padding: 30px 15px;
     max-width: 300px; } }
 .modal-slider__content{
+	position: relative;
 	overflow:scroll;
 -webkit-overflow-scrolling:touch;
 }
