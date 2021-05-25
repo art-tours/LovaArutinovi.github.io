@@ -2925,7 +2925,8 @@ body {
     padding: 30px 15px;
     max-width: 300px; } }
 .modal-slider__content{
-	overflow-y: scroll;
-	 -webkit-overflow-scrolling: touch;
+	overflow: auto; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
 }
