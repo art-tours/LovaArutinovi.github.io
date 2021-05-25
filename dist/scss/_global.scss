@@ -1,0 +1,143 @@
+body {
+    position: relative;
+    font-family: $bpgLe;
+    font-size: 20px;
+    font-weight: 400;
+
+    background: #EDEDED;
+    min-height: 100vh;
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1870px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.table__head-col,.table__item-col {
+    position: relative;
+    padding: 4px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #6C6D70;
+    &:last-child{
+        border-right: 0;
+    }
+}
+
+.table__head-col--1,.table__item-col--1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1.7%;
+    min-width: 1.7%;
+    padding: 0;
+    input{
+        margin-top: 2px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.table__head-col--2,.table__item-col--2 {
+    max-width: 1.9%;
+    min-width: 1.9%;
+}
+
+.table__head-col--3,.table__item-col--3 {
+    max-width: 6.8%;
+    min-width: 6.8%;
+}
+
+.table__head-col--4,.table__item-col--4 {
+    max-width: 3%;
+    min-width: 3%;
+}
+
+.table__head-col--5,.table__item-col--5 {
+    max-width: 4.6%;
+    min-width: 4.6%;
+}
+
+.table__head-col--6,.table__item-col--6 {
+    max-width: 11.5%;
+    min-width: 11.5%;
+}
+
+.table__head-col--7,.table__item-col--7 {
+    max-width: 5.5%;
+    min-width: 5.5%;
+}
+
+.table__head-col--8,.table__item-col--8 {
+    max-width: 5.9%;
+    min-width: 5.9%;
+}
+
+.table__head-col--9,.table__item-col--9 {
+    max-width: 6.6%;
+    min-width: 6.6%;
+}
+
+.table__head-col--10,.table__item-col--10 {
+    max-width: 12%;
+    min-width: 12%;
+}
+
+.table__head-col--11,.table__item-col--11 {
+    max-width: 4.5%;
+    min-width: 4.5%;
+}
+
+.table__head-col--12,.table__item-col--12 {
+    max-width: 8%;
+    min-width: 8%;
+}
+
+.table__head-col--13,.table__item-col--13 {
+    max-width: 9.8%;
+    min-width: 9.8%;
+}
+
+.table__head-col--14,.table__item-col--14 {
+    max-width: 13%;
+    min-width: 13%;
+}
+.table__item-col--14{
+    img{
+        margin-right: 5px;
+    }
+}
+
+.table__head-col--15,.table__item-col--15 {
+    max-width: 2.9%;
+    min-width: 2.9%;
+}
+.table__item-col--15{
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.table__head-text,.table__item-text{
+    font-family: $calibri;
+    font-size: 11px;
+    font-weight: 700;
+    color: $black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
