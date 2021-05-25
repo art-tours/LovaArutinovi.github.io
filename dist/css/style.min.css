@@ -1693,7 +1693,8 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   background: #fff;
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-overflow-y: auto; }
 
 .modal-slider__content-head {
   display: -webkit-box;
@@ -1749,6 +1750,7 @@ body {
   display: block; }
 
 .modal-slider__simple-comment {
+  position: relative;
   margin-top: 15px;
   font-size: 12px;
   font-family: "Calibri", Arial, Helvetica, sans-serif;
@@ -2268,10 +2270,6 @@ body {
     margin-right: 15px;
     width: 19px;
     height: 19px; }
-
-.modal-slider__content {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
 
 @media (max-width: 1700px) {
   .main {

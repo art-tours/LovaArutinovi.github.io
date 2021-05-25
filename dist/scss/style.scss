@@ -783,6 +783,7 @@
 
    background: #fff;
    overflow-y: auto;
+   -webkit-overflow-y: auto;
 }
 
 .modal-slider__content-head {
@@ -841,6 +842,7 @@
 }
 
 .modal-slider__simple-comment {
+   position: relative;
    margin-top: 15px;
    font-size: 12px;
    font-family: $calibri;
@@ -1315,8 +1317,5 @@
       height: 19px;
    }
 }
-.modal-slider__content{
-   overflow-y: scroll; 
-   -webkit-overflow-scrolling: touch;
-}
+
 @import "media";
