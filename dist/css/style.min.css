@@ -1692,9 +1692,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background: #fff;
-  overflow-y: auto;
-  -webkit-overflow-y: auto; }
+  background: #fff; }
 
 .modal-slider__content-head {
   display: -webkit-box;
