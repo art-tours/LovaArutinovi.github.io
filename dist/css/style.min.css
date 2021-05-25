@@ -2561,7 +2561,10 @@ body {
     width: 100%; }
   .modal-slider__content {
     width: 100%;
-    max-width: none; }
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    overflow: auto; }
   .report-sent__inner {
     max-width: 400px;
     padding: 90px 36px 60px; }

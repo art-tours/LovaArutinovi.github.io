@@ -79,10 +79,6 @@ openSlider.on('click', function (event) {
 
    smallSlider = '#' + openSliderId + " " + ".modal-slider__small";
    mainSlider = '#' + openSliderId + " " + ".modal-slider__main";
-   modalContent = '#' + openSliderId + " " + ".modal-slider__content";
-   
-document.querySelector(modalContent).setAttribute("style",  "overflow-y:scroll; -webkit-overflow-scrolling:touch;");
-
 
    $('.modal-slider__main-slide').zoom({
       magnify: 1.5,
