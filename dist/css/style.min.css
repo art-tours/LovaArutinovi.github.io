@@ -1692,7 +1692,9 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background: #fff; }
+  background: #fff;
+  overflow-y: auto;
+  overflow-y: scroll; }
 
 .modal-slider__content-head {
   display: -webkit-box;
@@ -1781,7 +1783,7 @@ body {
   margin-left: 8px;
   width: 100%;
   max-width: 390px;
-  padding: 11px 17px;
+  padding: 11px 33px 11px 17px;
   font-size: 18px;
   font-family: "Calibri", Arial, Helvetica, sans-serif;
   color: #221F20;
@@ -1902,7 +1904,7 @@ body {
   margin-left: 8px;
   width: 100%;
   max-width: 390px;
-  padding: 11px 17px;
+  padding: 11px 33px 11px 17px;
   font-size: 18px;
   font-family: "Calibri", Arial, Helvetica, sans-serif;
   color: #221F20;
@@ -2924,8 +2926,3 @@ body {
   .recipients__inner {
     padding: 30px 15px;
     max-width: 300px; } }
-.modal-slider__content{
-	position: relative;
-	overflow:scroll;
--webkit-overflow-scrolling:touch;
-}

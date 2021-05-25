@@ -783,7 +783,7 @@
 
    background: #fff;
    overflow-y: auto;
-   -webkit-overflow-y: auto;
+   overflow-y: scroll;
 }
 
 .modal-slider__content-head {
@@ -876,7 +876,7 @@
    width: 100%;
    max-width: 390px;
 
-   padding: 11px 17px;
+   padding: 11px 33px 11px 17px;
    font-size: 18px;
    font-family: $calibri;
    color: $black;
@@ -983,7 +983,7 @@
    width: 100%;
    max-width: 390px;
 
-   padding: 11px 17px;
+   padding: 11px 33px 11px 17px;
    font-size: 18px;
    font-family: $calibri;
    color: $black;
