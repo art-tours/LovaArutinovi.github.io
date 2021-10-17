@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>domenebi.ge</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="header__top-inner">
+               <div class="header__burger">
+                  <span class="header__burger-item"></span>
+                  <span class="header__burger-item"></span>
+                  <span class="header__burger-item"></span>
+               </div>
+               <div class="header__logo">
+                  <img src="img/domenebi-logo.svg" alt="logo">
+               </div>
+               <div class="header__actions">
+                  <div class="header__notifications">
+                     <img src="img/bell.svg" alt="bell">
+                  </div>
+                  <div class="header__cart">
+                     <img src="img/cart.svg" alt="cart">
+                     <input class="header__cart-input" type="text" value="0" readonly disabled>
+                  </div>
+                  <div class="header__user">
+                     <img src="img/user.svg" alt="user" class="header__user-img">
+                     <span class="header__user-name">Kancha Co.</span>
+                     <img src="img/arrow-down.svg" alt="arrow-down" class="header__user-img">
+                  </div>
+                  <div class="header__language">
+                     <img src="img/flag_ka.svg" alt="flag_ka">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header__bottom">
+         <div class="container">
+            <div class="header__bottom-inner">
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">დომენი</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ტრანსფერი</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ჰოსტინგი</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">Gmail</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ვებგვერდი</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">დომენის მარკეტი</a>
+                     </li>
+                  </ul>
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ჩვენს შესახებ</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ფასები</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">ბლოგი</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="#">დახმარება</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <section class="intro">
+         <div class="container">
+            <div class="intro__inner">
+               <h1 class="intro__title">გაყიდე და იყიდე დომენი მარტივად</h1>
+            </div>
+         </div>
+      </section>
+      <section class="goods">
+         <div class="container">
+            <div class="goods__inner">
+               <div class="goods__filter">
+                  <p class="goods__filter-domains-count">
+                     დომენები მარკეტზე: <span>703</span>
+                  </p>
+                  <div class="goods__filter-wrapper">
+                     <div class="goods__filter-head">
+                        <h3 class="goods__filter-head-title">ფილტრი</h3>
+                        <button class="goods__filter-head-close"><img src="img/cancel.svg" alt="close"></button>
+                     </div>
+                     <div class="goods__filter-search">
+                        <input class="goods__filter-search-input" type="input" placeholder="სახელით ძიება">
+                     </div>
+                     <div class="goods__filter-price">
+                        <h3 class="goods__filter-title">
+                           ფასი
+                        </h3>
+                        <div class="goods__filter-price-inputs">
+                           <p class="goods__filter-price-input-wrapper">
+                              <input class="goods__filter-price-input goods__filter-price-input--1" type="number"
+                                 value="50" max="50000">
+                              <span>&#8382;</span>
+                           </p>
+                           <p class="goods__filter-price-input-wrapper">
+                              <input class="goods__filter-price-input goods__filter-price-input--2" type="number"
+                                 value="50000" max="50000">
+                              <span>&#8382;</span>
+                           </p>
+                        </div>
+                        <div class="price-range"></div>
+                     </div>
+                     <div class="goods__filter-symbol">
+                        <h3 class="goods__filter-title">
+                           სიმბოლოების რაოდონობა
+                        </h3>
+                        <div class="goods__filter-symbol-inputs">
+                           <p class="goods__filter-symbol-input-wrapper">
+                              <input class="goods__filter-symbol-input goods__filter-symbol-input--1" type="number"
+                                 value="0" max="26">
+                           </p>
+                           <p class="goods__filter-symbol-input-wrapper">
+                              <input class="goods__filter-symbol-input goods__filter-symbol-input--2" type="number"
+                                 value="26" max="26">
+                           </p>
+                        </div>
+                        <div class="symbol-range"></div>
+                     </div>
+                     <div class="goods__filter-categories">
+                        <h3 class="goods__filter-title">
+                           კატეგორიები
+                        </h3>
+                        <div class="goods__filter-categories-items">
+
+                           <!-- load categories list -->
+
+                        </div>
+                     </div>
+                     <div class="goods__filter-areas">
+                        <h3 class="goods__filter-title">
+                           დომენის ზონა
+                        </h3>
+                        <div class="goods__filter-areas-items">
+                           <label class="goods__filter-areas-item goods__filter-label">
+                              <input class="goods__filter-areas-item-input" type="checkbox" value=".ge">
+                              <span class="goods__filter-label-checkmark"></span>
+                              <span class="goods__filter-areas-item--text">.ge</span>
+                           </label>
+                           <label class="goods__filter-areas-item goods__filter-label">
+                              <input class="goods__filter-areas-item-input" type="checkbox" value=".com.ge">
+                              <span class="goods__filter-label-checkmark"></span>
+                              <span class="goods__filter-areas-item--text">.com.ge</span>
+                           </label>
+                           <label class="goods__filter-areas-item goods__filter-label">
+                              <input class="goods__filter-areas-item-input" type="checkbox" value=".edu.ge">
+                              <span class="goods__filter-label-checkmark"></span>
+                              <span class="goods__filter-areas-item--text">.edu.ge</span>
+                           </label>
+                           <label class="goods__filter-areas-item goods__filter-label">
+                              <input class="goods__filter-areas-item-input" type="checkbox" value=".org.ge">
+                              <span class="goods__filter-label-checkmark"></span>
+                              <span class="goods__filter-areas-item--text">.org.ge</span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="goods__filter-footer">
+                        <button class="goods__filter-footer-search">ᲫᲘᲔᲑᲐ</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="goods__items">
+                  <div class="goods__items-buttons">
+                     <button class="goods__items-button goods__items-button--filter">
+                        სორტირება
+                        <img src="img/filter.svg" alt="filter">
+                     </button>
+                     <button class="goods__items-button goods__items-button--sort">
+                        სორტირება
+                        <img src="img/dawn.svg" alt="dawn">
+                     </button>
+                  </div>
+                  <div class="goods__items-sort">
+                     <button class="goods__items-sort-close"><img src="img/cancel.svg" alt="close"></button>
+                     <p class="goods__items-sort-text">
+                        სორტირება:
+                     </p>
+                     <div class="goods__items-sort-buttons">
+                        <button class="goods__items-sort-button active">
+                           დამატების თარიღით
+                           <img src="img/sort.svg" alt="sort">
+                        </button>
+                        <button class="goods__items-sort-button">
+                           ვადის ამოწურვით
+                           <img src="img/sort.svg" alt="sort">
+                        </button>
+                        <button class="goods__items-sort-button">
+                           ფასით
+                           <img src="img/sort.svg" alt="sort">
+                        </button>
+                        <button class="goods__items-sort-button">
+                           ანბანით
+                           <img src="img/sort.svg" alt="sort">
+                        </button>
+                     </div>
+                     <a class="goods__items-sort-help" href="#">როგორ გავყიდო დომენი?</a>
+                  </div>
+                  <div class="goods__items-wrapper">
+
+                     <!-- load domain list -->
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" ></script>
+   <script src="js/data.js"></script>
+   <script src="js/minor.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
